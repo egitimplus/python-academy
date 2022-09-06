@@ -15,7 +15,7 @@ def sum_numbers(data):
 
   return sum
 
-print(sum_numbers(numbers))
+print(sum_numbers(numbers)) # 41
 
 # --------------------------------------
 
@@ -32,7 +32,7 @@ def sum_numbers(data):
 
   return sum(new)
 
-print(sum_numbers(numbers))
+print(sum_numbers(numbers)) # 41
 
 # --------------------------------------
 
@@ -43,7 +43,7 @@ def sum_numbers(data):
   result = sum([int(item) for item in data])
   return result
   
-print(sum_numbers(numbers))
+print(sum_numbers(numbers)) # 41
 
 # --------------------------------------
 
@@ -56,7 +56,7 @@ def sum_numbers(data):
   result = sum(map(lambda x: int(x), data))
   return result
   
-print(sum_numbers(numbers))
+print(sum_numbers(numbers)) # 41
 
 # --------------------------------------
 
@@ -72,7 +72,7 @@ def sum_numbers(data):
   result = reduce(lambda x, y: int(x) + int(y), data)
   return result
   
-print(sum_numbers(numbers))
+print(sum_numbers(numbers)) # 41
 
 # --------------------------------------
 # if non-number characters
@@ -96,4 +96,4 @@ def sum_numbers(data):
 
   return sum(new)
 
-print(sum_numbers(numbers))
+print(sum_numbers(numbers)) # 41
