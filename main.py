@@ -1,3 +1,2 @@
-print('Hello World')
-print('Second Try')
-print('!!')
+import list.sum
+
