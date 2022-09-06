@@ -1,4 +1,6 @@
-# Sum of numbers in the list
+'''
+Sum of numbers in the list
+'''
 
 numbers = [1, '2', 5, '7', 11, 15]
 
@@ -9,11 +11,11 @@ numbers = [1, '2', 5, '7', 11, 15]
 # arithmetic operators
 
 def sum_numbers(data):
-  sum = 0
-  for number in data:
-    sum += int(number)
+    sum = 0
+    for number in data:
+        sum += int(number)
 
-  return sum
+    return sum
 
 print(sum_numbers(numbers)) # 41
 
@@ -26,11 +28,11 @@ print(sum_numbers(numbers)) # 41
 # sum()
 
 def sum_numbers(data):
-  new = []
-  for number in data:
-    new.append(int(number))
+    new = []
+    for number in data:
+        new.append(int(number))
 
-  return sum(new)
+    return sum(new)
 
 print(sum_numbers(numbers)) # 41
 
@@ -40,8 +42,8 @@ print(sum_numbers(numbers)) # 41
 # int()
 # sum()
 def sum_numbers(data):
-  result = sum([int(item) for item in data])
-  return result
+    result = sum([int(item) for item in data])
+    return result
   
 print(sum_numbers(numbers)) # 41
 
@@ -53,8 +55,8 @@ print(sum_numbers(numbers)) # 41
 # sum()
 # int()
 def sum_numbers(data):
-  result = sum(map(lambda x: int(x), data))
-  return result
+    result = sum(map(lambda x: int(x), data))
+    return result
   
 print(sum_numbers(numbers)) # 41
 
@@ -69,8 +71,8 @@ print(sum_numbers(numbers)) # 41
 from functools import reduce
 
 def sum_numbers(data):
-  result = reduce(lambda x, y: int(x) + int(y), data)
-  return result
+    result = reduce(lambda x, y: int(x) + int(y), data)
+    return result
   
 print(sum_numbers(numbers)) # 41
 
@@ -89,11 +91,11 @@ numbers = ['1', 2, '5', '7', '11', 15, 'bla']
 # list.append()
 
 def sum_numbers(data):
-  new = []
-  for number in data:
-    if str(number).isdecimal():
-      new.append(int(number))
+    new = []
+    for number in data:
+        if str(number).isdecimal():
+            new.append(int(number))
 
-  return sum(new)
+    return sum(new)
 
 print(sum_numbers(numbers)) # 41

@@ -1,2 +1,2 @@
-import list.sum
+import list.duplicates
 
