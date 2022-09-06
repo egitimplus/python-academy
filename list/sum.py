@@ -3,7 +3,7 @@
 numbers = [1, '2', 5, '7', 11, 15]
 
 # list
-# functions
+# function
 # for loop
 # int()
 # arithmetic operators
@@ -20,7 +20,7 @@ print(sum_numbers(numbers))
 # --------------------------------------
 
 # list
-# functions
+# function
 # for loop
 # int()
 # sum()
@@ -36,7 +36,7 @@ print(sum_numbers(numbers))
 
 # --------------------------------------
 
-# list comprehensions
+# list comprehension
 # int()
 # sum()
 def sum_numbers(data):
@@ -48,6 +48,7 @@ print(sum_numbers(numbers))
 # --------------------------------------
 
 # map()
+# function
 # lambda function
 # sum()
 # int()
@@ -60,6 +61,7 @@ print(sum_numbers(numbers))
 # --------------------------------------
 
 # reduce()
+# function
 # lambda
 # int()
 # arithmetic operators
