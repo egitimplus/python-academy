@@ -1,2 +1,2 @@
-import list.duplicates
+import list.sort
 
