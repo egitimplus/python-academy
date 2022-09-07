@@ -44,7 +44,7 @@ print(sort_list(data))
 
 # function
 # list.sort()
-# lambda functions
+# lambda function
 # str.lower()
 
 
@@ -63,7 +63,7 @@ print(sort_list(data))
 
 # function
 # list.sort()
-# lambda functions
+# lambda function
 # str.lower()
 
 
@@ -85,7 +85,7 @@ print(sort_list(data))
 # list
 # sorted()
 # str.lower()
-# lambda functions
+# lambda function
 
 
 def sort_list(data):
@@ -120,7 +120,7 @@ print(sort_list(data))
 
 # function
 # list.sort()
-# lambda functions
+# lambda function
 # len()
 
 
@@ -163,7 +163,7 @@ print(sort_list(data))
 # function
 # for loop
 # sorted()
-# if conditions
+# if condition
 # list.append()
 # range()
 # len()

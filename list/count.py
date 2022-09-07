@@ -66,8 +66,8 @@ print(count_item('Peter', data))
 
 # function
 # for
-# if conditions
-# artihmetic operators
+# if condition
+# artihmetic operator
 # dict
 
 def count_item(value, data):
@@ -85,14 +85,15 @@ print(count_item('Peter', data))
 Most Repeated Item
 '''
 
+# function
 # list
 # dict
 # for loop
 # str.lower()
 # arithmetic operators
-# if conditions
+# if condition
 # sorted
-# lambda functions
+# lambda function
 
 data = ['new', 'bold', 'apple', 'yes', 'apple', 'bold', 'new', 'apple']
 

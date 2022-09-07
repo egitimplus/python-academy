@@ -8,7 +8,7 @@ data = ['apple', 'apricot', 'blueberry', 'apple', 'Apple',
 # list
 # function
 # for loop
-# if conditions
+# if condition
 # list.count()
 # list.append()
 # str.lower()

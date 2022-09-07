@@ -54,7 +54,7 @@ print(list_flatten(data))
 # list
 # function
 # if conditions
-# recursive functions
+# recursive function
 # arithmetic operators
 
 data = [[[1,2]], [3,4], [5, [6, 7]]]

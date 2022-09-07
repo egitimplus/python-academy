@@ -9,7 +9,7 @@ data = ['paris', 'istanbul', 'newyork', 'paris', 'berlin', 'paris', 'newyork']
 # list
 # function
 # for loop
-# if conditions
+# if condition
 # list.count()
 # list.append()
 
@@ -30,7 +30,7 @@ print(find_duplicates(data))
 # list
 # function
 # for loop
-# if conditions
+# if condition
 # set()
 # list.count()
 # list.append()
