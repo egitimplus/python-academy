@@ -24,6 +24,8 @@ def unique_list(data):
 print(unique_list(data))
 # Output : ['apple', 'apricot', 'blueberry', 'cherry', 'banana']
 
+# --------------------------------------
+
 # list()
 # set()
 # function
