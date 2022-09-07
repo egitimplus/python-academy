@@ -2,6 +2,14 @@
 Group Elements of Same Indices
 '''
 
+# function
+# list
+# arithmetic operators
+# for loop
+# len()
+# range()
+# list.append()
+
 inputLists = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
 outputLists = []
 index = 0
@@ -19,6 +27,18 @@ print(outputLists)
 '''
 Find Missing Number using Python
 '''
+
+# function
+# list
+# arithmetic operators
+# for loop
+# len()
+# set()
+# range()
+# list.append()
+# if condition
+# membership operators
+
 def findMissingNumbers(n):
     numbers = set(n)
     length = len(n)
@@ -39,6 +59,15 @@ print(findMissingNumbers(listOfNumbers))
 '''
 Index of the Maximum Value in a List
 '''
+
+# function
+# list
+# arithmetic operators
+# while loop
+# relational operators
+# len()
+# if condition
+
 def maximum(x):
     maximum_index = 0
     current_index = 1
@@ -55,6 +84,14 @@ print(maximum(a))
 '''
 Index of the Minimum Value in a List
 '''
+
+# function
+# list
+# arithmetic operators
+# while loop
+# relational operators
+# len()
+# if condition
 
 def minimum(x):
     minimum_index = 0
@@ -76,7 +113,8 @@ print(minimum(a))
 # functions
 # for loop
 # list.append()
-# if conditions
+# if condition
+# membership operators
 
 list1 = [1, 2, 3]
 list2 = [1, 2, 4]
@@ -89,7 +127,7 @@ def difference(data_1, data_2):
 
     return diff
 
-difference(list1, list2)
+print(difference(list1, list2))
 
 
 
@@ -98,11 +136,13 @@ difference(list1, list2)
 '''
 İki listedeki benzersiz olanları listeleyen fonksiyon  [1,2,3] ve [1,2,4] -> [3, 4]
 '''
+
 # list
 # functions
 # for loop
-# if conditions
+# if condition
 # list.append()
+# membership operators
 
 list1 = [1, 2, 3]
 list2 = [1, 2, 4]
@@ -119,7 +159,7 @@ def symmetric_difference(data_1, data_2):
 
     return diff
 
-symmetric_difference(list1, list2)
+print(symmetric_difference(list1, list2))
 
 
 
@@ -132,16 +172,31 @@ Listeyi tersine çeviren kodu yazınız
 for ile de yapalım
 '''
 
+# function
 # list
 # list.reverse()
+# list.copy()
 
-cities = ['paris', 'istanbul', 'Newyork', 'berlin']
+data = ['paris', 'istanbul', 'Newyork', 'berlin']
 
-cities.reverse()
+def list_reverse(data):
+    new = data.copy()
+    new.reverse()
 
-# cities[::-1]
+    return new
 
-cities
+print(list_reverse(data))
+# --------------------------------------
+
+# function
+# list
+# list slicing
+
+def list_reverse(data):
+    return data[::-1]
+
+print(list_reverse(data))
+
 
 
 # --------------------------------------
@@ -171,8 +226,9 @@ my_avg(3,5,7,10)
 # list
 # functions
 # for loop
-# if conditions
+# if condition
 # list.append()
+# membership operators
 
 data1 = [1, 2, 5, 10]
 data2 = [2, 4, 10, 20]

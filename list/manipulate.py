@@ -2,14 +2,26 @@
 Listede ilk ve son elemanı sıfır yapan kodu yazınız
 '''
 
+# function
 # list
+# list indexing
 
-cities = ['paris', 'istanbul', 'Newyork', 'berlin']
+data = ['paris', 'istanbul', 'Newyork', 'berlin']
 
-cities[0] = 0
-cities[-1] = 0
+data[0] = 0
+data[-1] = 0
 
-# cities[0], cities[-1] = 0, 0
+# --------------------------------------
+
+'''
+Listede ilk ve son elemanı sıfır yapan kodu yazınız
+'''
+
+# function
+# list
+# list indexing
+
+data[0], data[-1] = 0, 0
 
 # --------------------------------------
 
@@ -17,26 +29,39 @@ cities[-1] = 0
 Listedeki ilk ve son elemanın yerini değiştiren kodu yazınız
 '''
 
+# function
+# list 
+# list indexing
+
+first = data[0]
+last = data[-1]
+
+data[0] = last
+data[-1] = first
+
+# --------------------------------------
+
+'''
+Listedeki ilk ve son elemanın yerini değiştiren kodu yazınız
+'''
+
+# function
 # list
+# list indexing
 
-first = cities[0]
-last = cities[-1]
-
-cities[0] = last
-cities[-1] = first
-
-# cities[0], cities[-1] = cities[-1], cities[0]
+data[0], data[-1] = data[-1], data[0]
 
 # --------------------------------------
 '''
 Listedeki ilk ve son elemanı silen kodu
 '''
+# function
 # list
+# list indexing
 # del
 
-del cities[0]
-del cities[-1]
+del data[0]
+del data[-1]
 
-cities
+data
 
-# --------------------------------------
