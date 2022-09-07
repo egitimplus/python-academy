@@ -79,3 +79,33 @@ def count_item(value, data):
 
 print(count_item('Peter', data))
 # Output: 2
+
+# --------------------------------------
+'''
+Most Repeated Item
+'''
+
+# list
+# dict
+# for loop
+# str.lower()
+# arithmetic operators
+# if conditions
+# sorted
+# lambda functions
+
+data = ['new', 'bold', 'apple', 'yes', 'apple', 'bold', 'new', 'apple']
+
+def most_repeat(data):
+    new = {}
+    for item in data:
+        item_lower = item.lower()
+        if item in new:
+            new[item_lower] += 1
+        else:
+            new[item_lower] = 1
+
+    return sorted(new, key=lambda x: x[1], reverse=True)[0]
+
+print(most_repeat(data))
+# Output: apple
