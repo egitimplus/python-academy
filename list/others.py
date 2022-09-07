@@ -68,15 +68,122 @@ a = [23, 76, 45, 20, 70, 65, 15, 54]
 print(minimum(a))
 
 # --------------------------------------
+'''
+İki listede birbirinden benzersiz olanları listeyen fonksiyon [1,2,3] ve [1,2,4] -> [3]
+'''
 
+# list
+# functions
+# for loop
+# list.append()
+# if conditions
+
+list1 = [1, 2, 3]
+list2 = [1, 2, 4]
+
+def difference(data_1, data_2):
+    diff = []
+    for item in data_1:
+        if item not in data_2:
+            diff.append(item)
+
+    return diff
+
+difference(list1, list2)
+
+
+
+
+# --------------------------------------
+'''
+İki listedeki benzersiz olanları listeleyen fonksiyon  [1,2,3] ve [1,2,4] -> [3, 4]
+'''
+# list
+# functions
+# for loop
+# if conditions
+# list.append()
+
+list1 = [1, 2, 3]
+list2 = [1, 2, 4]
+
+def symmetric_difference(data_1, data_2):
+    diff = []
+    for item in data_1:
+        if item not in data_2:
+            diff.append(item)
+
+    for item in data_2:
+        if item not in data_1:
+            diff.append(item)
+
+    return diff
+
+symmetric_difference(list1, list2)
 
 
 
 
 # --------------------------------------
 
+'''
+Listeyi tersine çeviren kodu yazınız
 
+for ile de yapalım
+'''
+
+# list
+# list.reverse()
+
+cities = ['paris', 'istanbul', 'Newyork', 'berlin']
+
+cities.reverse()
+
+# cities[::-1]
+
+cities
+
+
+# --------------------------------------
+'''
+Bir fonksiyon yazalım ve bu fonksiyon parametre olarak girilen 
+sayıların ortalamasını alsın
+'''
+
+# functions
+# *args
+# sum()
+# len()
+# arithmetic operators
+
+def my_avg(*numbers):
+    return sum(numbers) / len(numbers)
+
+my_avg(3,5,7,10) 
 
 
 
 # --------------------------------------
+'''
+İki listedeki aynı olan elemanları yazdıran fonksiyon
+'''
+
+# list
+# functions
+# for loop
+# if conditions
+# list.append()
+
+data1 = [1, 2, 5, 10]
+data2 = [2, 4, 10, 20]
+
+def same_items(data1, data2):
+    new = []
+    for item in data1:
+        if item in data2:
+            new.append(item)
+
+    return new
+
+same_items(data1, data2)
+
