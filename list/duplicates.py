@@ -7,7 +7,7 @@ The function should check if the list has any duplicates. If there are duplicate
 data = ['paris', 'istanbul', 'newyork', 'paris', 'berlin', 'paris', 'newyork']
 
 # list
-# functions
+# function
 # for loop
 # if conditions
 # list.count()
@@ -23,11 +23,12 @@ def find_duplicates(data):
     return new
 
 print(find_duplicates(data))
+# Output: ['paris', 'newyork']
 
 # --------------------------------------
 
 # list
-# functions
+# function
 # for loop
 # if conditions
 # set()
@@ -43,4 +44,5 @@ def find_duplicates(data):
     return list(new)
     
 print(find_duplicates(data))
+# Output: ['paris', 'newyork']
 

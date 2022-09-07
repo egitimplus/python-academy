@@ -1,130 +1,159 @@
 '''
-Sorting lists
+Sorting list
 '''
 
 # sorting list ascending
 
+# function
 # list.sort()
 
 data = ['paris', 'istanbul', 'Newyork', 'berlin']
+
 
 def sort_list(data):
     new = data.copy()
     new.sort()
     return new
 
+
 print(sort_list(data))
+# Output : ['Newyork', 'berlin', 'istanbul', 'paris']
 
 # --------------------------------------
 
 # sorting list ascending (fix uppercase char problem)
 
+# function
 # list comprehension
 # str.lower()
 # list.sort()
+
 
 def sort_list(data):
     new = [item.lower() for item in data]
     new.sort()
     return new
-    
+
+
 print(sort_list(data))
+# Output : ['berlin', 'istanbul', 'Newyork', 'paris']
 
 # --------------------------------------
 
-# sorting list ascending with key parameter 
+# sorting list ascending with key parameter
 
+# function
 # list.sort()
 # lambda functions
-# str.lower() 
+# str.lower()
+
 
 def sort_list(data):
     new = data.copy()
     new.sort(key=lambda x: x.lower())
     return new
-    
+
+
 print(sort_list(data))
+# Output : ['berlin', 'istanbul', 'Newyork', 'paris']
 
 # --------------------------------------
 
 # sorting list descending
 
+# function
 # list.sort()
 # lambda functions
 # str.lower()
+
 
 def sort_list(data):
     new = data.copy()
     new.sort(key=lambda x: x.lower(), reverse=True)
 
     return new
-    
+
+
 print(sort_list(data))
+# Output : ['paris', 'Newyork', 'istanbul', 'berlin']
+
 # --------------------------------------
 
 # sorting list with sorted method.
 
+# function
 # list
 # sorted()
 # str.lower()
 # lambda functions
 
+
 def sort_list(data):
     new = sorted(data, key=lambda x: x.lower(), reverse=True)
     return new
-    
+
+
 print(sort_list(data))
+# Output : ['paris', 'Newyork', 'istanbul', 'berlin']
+
 # --------------------------------------
 
 # sorting list by number of characters
 
+# function
 # list.sort()
 # len()
+
 
 def sort_list(data):
     new = data.copy()
     new.sort(key=len)
 
     return new
-    
+
+
 print(sort_list(data))
+
+# Output : ['paris', 'berlin', 'Newyork', 'istanbul']
 
 # --------------------------------------
 
+# function
 # list.sort()
 # lambda functions
 # len()
+
 
 # sorting list by number of characters
 def sort_list(data):
     new = data.copy()
     new.sort(key=lambda x: len(x))
     return new
-    
+
+
 print(sort_list(data))
+# Output : ['paris', 'berlin', 'Newyork', 'istanbul']
 
 # --------------------------------------
 
 # sorting list by second word
 
+# function
 # list
 # list.sort()
 # str.split()
 
-data = [
-    'Adam Smith',
-    'Alex Mors',
-    'Mina Moore',
-    'Arya Stark',
-    'Ban Ate'
-]
+data = ['Adam Smith', 'Alex Mors', 'Mina Moore', 'Arya Stark', 'Ban Ate']
+
 
 def sort_list(data):
     new = data.copy()
     new.sort(key=lambda x: x.split()[1])
     return new
-    
+
+
 print(sort_list(data))
+# Output : ['Ban Ate', 'Mina Moore', 'Alex Mors', 'Adam Smith', 'Arya Stark']
 
 # --------------------------------------
 
@@ -142,6 +171,7 @@ print(sort_list(data))
 
 data = [24, 0, 35, 0, 41, 11, 8]
 
+
 def sorted_list(data):
     new = []
     for item in sorted(data):
@@ -154,4 +184,6 @@ def sorted_list(data):
             new.append(0)
     return new
 
+
 print(sorted_list(data))
+# Output : [8, 11, 24, 35, 41, 0, 0]

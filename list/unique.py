@@ -2,25 +2,36 @@
 Get unique values from a list
 ''' 
 
+data = ['apple', 'apricot', 'blueberry', 'apple', 'Apple', 
+        'apricot', 'blueberry', 'cherry', 'Banana', 'applE']
+
 # list
-# functions
+# function
 # for loop
 # if conditions
 # list.count()
 # list.append()
+# str.lower()
 
 def unique_list(data):
     new = []
     for item in data:
-        if not new.count(item):
-            new.append(item)
+        if not new.count(item.lower()):
+            new.append(item.lower())
 
     return new
 
 print(unique_list(data))
+# Output : ['apple', 'apricot', 'blueberry', 'cherry', 'banana']
 
 # list()
 # set()
+# function
+# str.lower()
+# set comprehension
 
-unique_list = list(set(data))
-print(unique_list)
+def unique_list(data):
+    return list(set(i.lower() for i in data))
+    
+print(unique_list(data))
+# Output : ['apricot', 'blueberry', 'banana', 'apple', 'cherry']
