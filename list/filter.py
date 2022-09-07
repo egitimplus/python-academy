@@ -9,6 +9,7 @@ Filter a list
 # for loop
 # str.startswith()
 # list.append()
+# relational operators
 
 data = ['apple', 'apricot', 'blueberry', 'apple', 'Apple', 
         'apricot', 'blueberry', 'cherry', 'Banana', 'applE']
@@ -34,6 +35,7 @@ print(filter_list('b', data))
 # str.startswith()
 # list.append()
 # str.lower()
+# relational operators
 
 def filter_list(char, data):
     new = []
@@ -58,6 +60,7 @@ print(filter_list('b', data))
 # for loop
 # str.endswith()
 # list.append()
+# relational operators
 
 def filter_list(char, data):
     new = []
@@ -72,3 +75,26 @@ def filter_list(char, data):
 
 print(filter_list('y', data))
 # Output: ['blueberry', 'cherry']
+
+# --------------------------------------
+
+'''
+Sequential Search
+'''
+# filter
+# bool
+# for loop
+# relational operators
+# function
+
+def sequential_search(list_, n):
+    found = False
+    for i in list_:
+        if i == n:
+            found = True
+            break
+    return found
+
+numbers = [1, 3, 5, 10, 20]
+print(sequential_search(numbers, 3))
+# True
