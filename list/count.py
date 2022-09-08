@@ -2,7 +2,7 @@
 Counting Item Occurrences 
 '''
 
-data = ['John','Kelly', 'Peter', 'Moses', 'peter']
+data = ['Banana','Apple', 'Kiwi', 'Cherry', 'kiwi']
 
 # function
 # dict
@@ -23,7 +23,7 @@ def count_items(data):
     return new
 
 print(count_items(data))
-# Output : {'john': 1, 'kelly': 1, 'peter': 2, 'moses': 1}
+# Output : {'banana': 1, 'apple': 1, 'kiwi': 2, 'cherry': 1}
 
 # --------------------------------------
 
@@ -44,7 +44,7 @@ def count_items(data):
     return dict(new)
     
 print(count_items(data))
-# Output : {'john': 1, 'kelly': 1, 'peter': 2, 'moses': 1}
+# Output : {'banana': 1, 'apple': 1, 'kiwi': 2, 'cherry': 1}
 
 # --------------------------------------
 '''
