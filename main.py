@@ -1,1 +1,1 @@
-import list.unique
+import string.auth.username_generator_from_fullname
