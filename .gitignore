@@ -137,3 +137,8 @@ Pipfile.lock
 t.py
 repl-tweet.py
 .DS_Store
+.breakpoints
+.replit
+poetry.lock
+pyproject.toml
+replit.nix
