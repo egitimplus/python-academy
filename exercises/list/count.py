@@ -5,8 +5,8 @@ Counting Item Occurrences
 data = ['Banana','Apple', 'Kiwi', 'Cherry', 'kiwi']
 
 # function
-# dict
-# list
+# dict 
+# list 
 # for loop
 # str.lower()
 # if conditions
